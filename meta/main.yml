@@ -15,5 +15,6 @@ galaxy_info:
     - precise
     - trusty
     - xenial
+  dependencies: []
   galaxy_tags:
     - foreman

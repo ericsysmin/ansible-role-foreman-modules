@@ -1,3 +1,4 @@
+# ericsysmin.foreman-modules
 # Foreman Ansible Modules [![Build Status](https://travis-ci.org/theforeman/foreman-ansible-modules.svg?branch=master)](https://travis-ci.org/theforeman/foreman-ansible-modules)
 
 This repository contains Ansible modules for interacting with a Foreman server API and various plugin APIs such as Katello.
