@@ -1,0 +1,55 @@
+---
+- hosts: fixtures
+  gather_facts: false
+  tasks:
+  - name: 'Load server config'
+    include_vars:
+      file: server_vars.yml
+  - include: tasks/organization.yml
+    vars:
+      organization_state: present
+  - include: tasks/location.yml
+    vars:
+      location_state: present
+
+- hosts: tests
+  gather_facts: false
+  tasks:
+  - name: 'Load server config'
+    include_vars:
+      file: server_vars.yml
+  - include: tasks/ptable.yml
+    vars:
+      ptable_state: present
+      expected_change: true
+  - include: tasks/ptable.yml
+    vars:
+      ptable_state: present
+      expected_change: false
+  - include: tasks/ptable.yml
+    vars:
+      ptable_layout: 'A partition table with a changed layout'
+      ptable_state: present
+      expected_change: true
+  - include: tasks/ptable.yml
+    vars:
+      ptable_state: absent
+      expected_change: true
+  - include: tasks/ptable.yml
+    vars:
+      ptable_state: absent
+      expected_change: false
+
+- hosts: fixtures
+  gather_facts: false
+  tasks:
+  - name: 'Load server config'
+    include_vars:
+      file: server_vars.yml
+  - include: tasks/location.yml
+    vars:
+      location_state: absent
+  - include: tasks/organization.yml
+    vars:
+      organization_state: absent
+...

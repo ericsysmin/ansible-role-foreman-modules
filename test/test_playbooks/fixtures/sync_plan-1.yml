@@ -1,0 +1,290 @@
+interactions:
+- request:
+    body: '{}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['2']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/json]
+    method: GET
+    uri: https://foreman.example.com/katello/api/v2/organizations
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42Py27CMBBF9/kKa9ZBskNB4C3dd0NXFYom8ZRacpPIdhYQ5d+ZJAgofbHLuXOj
+        69MlQkCsIzrQIksHCm3xNWhwTwxqAvL5Ocjk1Cf05Qdz1To3JbWPzB1/MxWHmxtz7Q35c8RJP/7i
+        KbQuBo7fOnBYEM/DM70jp/mL32NljxhtXUEKpSeMZHLkEcikWs3keqZWQq61XOrFUrxuN1xrG/NI
+        zRrQKoUKP+k6Ke4mo43uj7OhUHrbjKQHrz69WmwpPKygMi3n+mnxj8JdbVSYXxyGwd8Efrp9f/0u
+        6ZMT1svyTRoCAAA=
+    headers:
+      Apipie-Checksum: [f2876b3566bdeb9fe9a95030a182878ad047514c]
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [Keep-Alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['239']
+      Content-Security-Policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 18 Sep 2018 12:03:49 GMT']
+      ETag: [W/"d6b75e2e08a69bdb9e5c884c2be3e75d-gzip"]
+      Foreman_api_version: ['2']
+      Foreman_version: [1.20.0-develop]
+      Keep-Alive: ['timeout=15, max=100']
+      Server: [Apache/2.4.6 (CentOS)]
+      Set-Cookie: [_session_id=a0fbd8efb50b2c53e12c645726dcd45f; path=/; HttpOnly;
+          secure; SameSite=Lax]
+      Strict-Transport-Security: [max-age=631139040; includeSubdomains]
+      Vary: [Accept-Encoding]
+      Via: [1.1 dev.example.com]
+      X-Content-Type-Options: [nosniff]
+      X-Download-Options: [noopen]
+      X-Frame-Options: [sameorigin]
+      X-Permitted-Cross-Domain-Policies: [none]
+      X-Request-Id: [bbea0cc3-87a4-47f5-ad76-f32c8562b4e6]
+      X-Runtime: ['0.112627']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: '{"search": "name=\"Test Organization\""}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['40']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/json]
+    method: GET
+    uri: https://foreman.example.com/katello/api/v2/organizations
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42PwWrDMAyG73kKo3MKcbpBZ9hpD7BLd2pHUGLRGbwkyMqhC3n3qU7GxmCwm77P
+        v/mluTAGZBCM4Exd3ihN7ZewWYx4oW8gbjZRV2uekLs3ZejxnR7PcKQk5pkv2IcPlDD0Z4A1ObBo
+        btZZqb3q3E8xlisP7Ik3pWbJX5jSFCWpPs0QsSVdKxc0PwughI4JhXyD2gB1ZQ+76mFnD8bWrtq7
+        u3vzcnzS2DT6/8SCB2f3Zb5oKzS/CiVI/OvNU+o4jJnc7Z7ltViKT7rtrLdsAQAA
+    headers:
+      Apipie-Checksum: [f2876b3566bdeb9fe9a95030a182878ad047514c]
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [Keep-Alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['219']
+      Content-Security-Policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 18 Sep 2018 12:03:50 GMT']
+      ETag: [W/"dbc766094cf697182bc2095d2bdd7e6b-gzip"]
+      Foreman_api_version: ['2']
+      Foreman_version: [1.20.0-develop]
+      Keep-Alive: ['timeout=15, max=100']
+      Server: [Apache/2.4.6 (CentOS)]
+      Set-Cookie: [_session_id=efc38447d6c317fbe7ad381c7f864ad5; path=/; HttpOnly;
+          secure; SameSite=Lax]
+      Strict-Transport-Security: [max-age=631139040; includeSubdomains]
+      Vary: [Accept-Encoding]
+      Via: [1.1 dev.example.com]
+      X-Content-Type-Options: [nosniff]
+      X-Download-Options: [noopen]
+      X-Frame-Options: [sameorigin]
+      X-Permitted-Cross-Domain-Policies: [none]
+      X-Request-Id: [f76f0a45-4cf5-4374-a3ae-6c9d00d3814b]
+      X-Runtime: ['0.061155']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: '{"organization_id": 13, "name": "Test Sync Plan"}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['49']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/json]
+    method: GET
+    uri: https://foreman.example.com/katello/api/v2/organizations/13/sync_plans
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA0XLsQqAMBAD0N3PyNxBHe9XRORaDx1qK9d2kOK/WxB0ywtJRY6ZPag3SMX+OHkT
+        0NCC6PJibLWoRgWF4n07CKvbP0XNoAp7gRD4EBhEXaXNwcnhNlBJxecEmua7ewAzgtzWewAAAA==
+    headers:
+      Apipie-Checksum: [f2876b3566bdeb9fe9a95030a182878ad047514c]
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [Keep-Alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['112']
+      Content-Security-Policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 18 Sep 2018 12:03:50 GMT']
+      ETag: [W/"956e0fd5b832fbda8d01b01a5b7de844-gzip"]
+      Foreman_api_version: ['2']
+      Foreman_version: [1.20.0-develop]
+      Keep-Alive: ['timeout=15, max=100']
+      Server: [Apache/2.4.6 (CentOS)]
+      Set-Cookie: [_session_id=77dd867b7cc368131d9e316724010244; path=/; HttpOnly;
+          secure; SameSite=Lax]
+      Strict-Transport-Security: [max-age=631139040; includeSubdomains]
+      Vary: [Accept-Encoding]
+      Via: [1.1 dev.example.com]
+      X-Content-Type-Options: [nosniff]
+      X-Download-Options: [noopen]
+      X-Frame-Options: [sameorigin]
+      X-Permitted-Cross-Domain-Policies: [none]
+      X-Request-Id: [15bc4188-b750-4025-98c8-3d3bcd89fe82]
+      X-Runtime: ['0.066431']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: '{"name": "Test Sync Plan", "interval": "weekly", "enabled": false, "sync_date":
+      "2017-01-01 00:00:00", "organization_id": 13}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['125']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/json]
+    method: POST
+    uri: https://foreman.example.com/katello/api/v2/organizations/13/sync_plans
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42QwU7DMAyG7zxF5CuZmqZCbLnyAkiME0JRaL0pWppWTrqtTHt33MABAQciX/L7
+        i5zPQlzAd2BqLWGgvYv+3WU/RFvCRkJ0PYKBLaYsnubYisfgIkjoMLXkx4UFE6cQJPiYkY4uMH5C
+        PISZsYjnbBO/41Crel2pTaUboZQpJW4VH+ZaQpexsy5/gSu1WdVrUWujGnOnxPP2gbFp7P6DYXRv
+        Adlg50JCCbuBsHfRZpcOyRK2E5GPexuGvW+LqtbLH9gbzyNhSt+0Rhq6qc0JzMsr35B6X/ocXODo
+        8VT87Mh74SjTxAOx8/mPmJeWaZh/da4SSrTIfYrdV6rm+rmo680H5jk3/LEBAAA=
+    headers:
+      Apipie-Checksum: [f2876b3566bdeb9fe9a95030a182878ad047514c]
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [Keep-Alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['275']
+      Content-Security-Policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 18 Sep 2018 12:03:50 GMT']
+      ETag: [W/"c5a38e77138d1c708f93db8cf12a5519-gzip"]
+      Foreman_api_version: ['2']
+      Foreman_version: [1.20.0-develop]
+      Keep-Alive: ['timeout=15, max=100']
+      Server: [Apache/2.4.6 (CentOS)]
+      Set-Cookie: [request_method=POST; path=/; secure; HttpOnly; SameSite=Lax, _session_id=c7008ee93dc4d1c5d1c350f8e1bb0e25;
+          path=/; HttpOnly; secure; SameSite=Lax]
+      Strict-Transport-Security: [max-age=631139040; includeSubdomains]
+      Vary: [Accept-Encoding]
+      Via: [1.1 dev.example.com]
+      X-Content-Type-Options: [nosniff]
+      X-Download-Options: [noopen]
+      X-Frame-Options: [sameorigin]
+      X-Permitted-Cross-Domain-Policies: [none]
+      X-Request-Id: [fd8f3c18-9a9d-469c-9745-8639da82fd36]
+      X-Runtime: ['0.177909']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: '{"organization_id": 13, "name": "Test Product"}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['47']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/json]
+    method: GET
+    uri: https://foreman.example.com/katello/api/v2/products
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA32RzU7DMAzH7zxF5XMP6yZg640ngAM3hKI0tbqILIkcF1Sqvjtuu49SJG72z/bf
+        Xz1wYO2gLHJIbXVzom5wNpDU7Gw3OSBRICh965wUoCZzvHqBGMoeqg5K8PqEkEOgGiUddDIw5ECY
+        WscJyrcebC3yom+iGk3Ybw9FsX94vD/sDlI5CZTwiomzFwp1a1io0xW6M1Y3XGMyZCPb4CX4lB11
+        jF3mLLPDjEeJeM0V69PKVFPX7U7m7rxR0Wk/kfMuI0vt6aRJtull9CY26gO7ZU5yymhlkHhNnUXP
+        /0RWQlMz1owX4rSsN+I/QH3JSdMFB2q0t996XHwSLHa/4fiP5SWfl7HVOVexWW5Y3OfSlTCGZDlQ
+        p0xovTx9M7wPdz/ko6QSSwIAAA==
+    headers:
+      Apipie-Checksum: [cb18c6fdaa85357a81ccbb46ad2c5ae577c6d37b]
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [Keep-Alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['304']
+      Content-Security-Policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 18 Sep 2018 12:03:50 GMT']
+      ETag: [W/"3a0efd500f209af86861a619ff46d5a7-gzip"]
+      Foreman_api_version: ['2']
+      Foreman_version: [1.20.0-develop]
+      Keep-Alive: ['timeout=15, max=100']
+      Server: [Apache/2.4.6 (CentOS)]
+      Set-Cookie: [_session_id=24a3651a1fc3baa3134895deac75c760; path=/; HttpOnly;
+          secure; SameSite=Lax]
+      Strict-Transport-Security: [max-age=631139040; includeSubdomains]
+      Vary: [Accept-Encoding]
+      Via: [1.1 dev.example.com]
+      X-Content-Type-Options: [nosniff]
+      X-Download-Options: [noopen]
+      X-Frame-Options: [sameorigin]
+      X-Permitted-Cross-Domain-Policies: [none]
+      X-Request-Id: [d4630f89-97e6-4239-bed1-96b34f12fa81]
+      X-Runtime: ['0.109316']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: '{"product_ids": [11]}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['21']
+      User-Agent: [python-requests/2.19.1]
+      content-type: [application/json]
+    method: PUT
+    uri: https://foreman.example.com/katello/api/v2/organizations/13/sync_plans/12/add_products
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42RUW/CIBSF3/crCK+rEdo4274t+wMmc0/LQrBcHRGBAFU743/fbdVtuj2M8HT4
+        LjnnXEIOVCta8zyjLqyk1R8yaWfFIBYZtXIDtKZziIk8d7YhMyMtzaiC2ATte5bWtjUmo9omCFtp
+        EN8BrE2HmIV9EhHnUMwZL8esGucFYaweLrlneJBrAsgESsh0BkesGvGS8LxmRT1h5GX+hFjr1X8w
+        sHJhABMspYmQ0aULsJFWJBnXUQRo2hC0XQnjVroZouZ57wFzw94HiPFHLB+capsUaf167ooj64cx
+        WuYV5+XDdFIVFb1ua3aaQ9XIBZizLL7lqwrpI3mX3nfE6JQMkNR/4b/YvkIRE4a/2DIyXpq9EcTO
+        BRUvcgDvok4udKJxrcXi2PENU0HY6CEnkge61bA7DXvcL0optFgcKJ3+kNF5Cq779XI8G1WDz35B
+        0zHjeG8Xfrz7BH/uokd5AgAA
+    headers:
+      Apipie-Checksum: [f2876b3566bdeb9fe9a95030a182878ad047514c]
+      Cache-Control: ['max-age=0, private, must-revalidate']
+      Connection: [Keep-Alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['360']
+      Content-Security-Policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      Content-Type: [application/json; charset=utf-8]
+      Date: ['Tue, 18 Sep 2018 12:03:51 GMT']
+      ETag: [W/"c588c4e6c717733aea9a0053d6b4939e-gzip"]
+      Foreman_api_version: ['2']
+      Foreman_version: [1.20.0-develop]
+      Keep-Alive: ['timeout=15, max=100']
+      Server: [Apache/2.4.6 (CentOS)]
+      Set-Cookie: [request_method=PUT; path=/; secure; HttpOnly; SameSite=Lax, _session_id=c5d897454b3825fe49895a7bb6a92b12;
+          path=/; HttpOnly; secure; SameSite=Lax]
+      Strict-Transport-Security: [max-age=631139040; includeSubdomains]
+      Vary: [Accept-Encoding]
+      Via: [1.1 dev.example.com]
+      X-Content-Type-Options: [nosniff]
+      X-Download-Options: [noopen]
+      X-Frame-Options: [sameorigin]
+      X-Permitted-Cross-Domain-Policies: [none]
+      X-Request-Id: [e3140943-964a-45e8-9212-ba1fd0ce11b6]
+      X-Runtime: ['0.136816']
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1

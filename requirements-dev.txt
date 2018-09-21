@@ -1,0 +1,6 @@
+simplejson
+pycodestyle
+pytest
+vcrpy
+git+https://github.com/SatelliteQE/nailgun.git@master#egg=nailgun
+-r requirements.txt

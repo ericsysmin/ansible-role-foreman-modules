@@ -1,0 +1,36 @@
+- hosts: localhost
+  vars:
+    list_of_files_to_keep:
+      - foreman_module_setup.yml
+      - .git
+      - meta
+  tasks:
+    - name: Capture files in path and register
+      command: >
+        ls -1 {{ ansible_env.PWD }}
+      register: files
+
+    - name: Remove files except specified
+      file:
+        path: "{{ item }}"
+        state: absent
+      loop: "{{ files.stdout_lines }}"
+      when: >
+        item not in list_of_files_to_keep
+    - name: Download foreman-ansible-modules from git
+      unarchive:
+        src: "https://github.com/theforeman/foreman-ansible-modules/archive/master.tar.gz"
+        dest: "{{ ansible_env.PWD }}"
+        remote_src: yes
+        extra_opts:
+          - "--strip-components=1"
+    - name: Remove uneccessary files
+      file:
+        path: "{{ item }}"
+        state: absent
+      loop:
+        - debug-setup.yml
+        - Makefile
+        - ansible.cfg
+    - name: Rename modules to library for role
+      command: mv modules library

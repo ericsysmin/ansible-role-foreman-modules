@@ -1,0 +1,141 @@
+interactions:
+- request:
+    body: !!python/unicode '{}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['2']
+      User-Agent: [python-requests/2.18.4]
+      content-type: [application/json]
+    method: GET
+    uri: https://centos7-devel/katello/api/v2/ping
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA1NQqFYqLkksKS1WslLKz1bSUSpOLSrLTE4F8quVCkpzCkA0qoqU0qLEksz8vPhc
+        kJCRmVKtDlhlfGJpSQYh5YYmIOXJiXkpOakFmXkkKifOCmOQnrT8otTcxLz4ksTi7GKCnlCqra3l
+        AgBpHWhRDQEAAA==
+    headers:
+      apipie-checksum: [50f118e03d02e87d1e679bc02ac0bde0]
+      cache-control: ['max-age=0, private, must-revalidate']
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['124']
+      content-security-policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      content-type: [application/json; charset=utf-8]
+      date: ['Wed, 21 Mar 2018 16:37:21 GMT']
+      etag: [W/"0a1e1c64c4acfab230af10dfb61eacda-gzip"]
+      foreman_api_version: ['2']
+      foreman_version: [1.16.0]
+      keep-alive: ['timeout=15, max=100']
+      server: [WEBrick/1.3.1 (Ruby/2.2.4/2015-12-16)]
+      set-cookie: [_session_id=a673d62a064fb09287ffa2010a0ca283; path=/; HttpOnly]
+      strict-transport-security: [max-age=631152000; includeSubdomains]
+      vary: [Accept-Encoding]
+      via: [1.1 centos7-devel.anubis.example.com]
+      x-content-type-options: [nosniff]
+      x-download-options: [noopen]
+      x-frame-options: [sameorigin]
+      x-permitted-cross-domain-policies: [none]
+      x-request-id: [6117776e-9c47-4082-8d10-8f061d5e00c8]
+      x-runtime: ['0.135520']
+      x-xss-protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode '{"per_page": 4294967296, "search": "name=\"Test Location\""}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['60']
+      User-Agent: [python-requests/2.18.4]
+      content-type: [application/json]
+    method: GET
+    uri: https://centos7-devel/api/v2/locations
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42PMWvDMBCFd/8KcbMDlhLs2pCpa8d0SopRpKM1qJI5yUMw/u89ywmlpUO3e9+9
+        p3uaCyEghaQddEKVq4rT9QFkBqN+x2+B1N/BQbWHtm5UW2851GQ+mIPXn3i8wAljEi/B6DQEfwHY
+        XIESe2aeWV1vPPvJuXLTgSzSHTFZcoQwTi5FxucZtDf8LHEux7gcoU/9YH+BtcMDGUKd0PaaL4Oq
+        5NOu2u+UFLLu9k1XNeL19AwlTKP9j2091coStgs/f8nrNCT3F7cYDQ1jVrnX8lYsxRdpORsJgAEA
+        AA==
+    headers:
+      apipie-checksum: [50f118e03d02e87d1e679bc02ac0bde0]
+      cache-control: ['max-age=0, private, must-revalidate']
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['229']
+      content-security-policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      content-type: [application/json; charset=utf-8]
+      date: ['Wed, 21 Mar 2018 16:37:21 GMT']
+      etag: [W/"8f251cb2fd37ed3378080f96295a9013-gzip"]
+      foreman_api_version: ['2']
+      foreman_version: [1.16.0]
+      keep-alive: ['timeout=15, max=100']
+      server: [WEBrick/1.3.1 (Ruby/2.2.4/2015-12-16)]
+      set-cookie: [_session_id=7321b9a5941f5062bdbfd9dac9a56cea; path=/; HttpOnly]
+      strict-transport-security: [max-age=631152000; includeSubdomains]
+      vary: [Accept-Encoding]
+      via: [1.1 centos7-devel.anubis.example.com]
+      x-content-type-options: [nosniff]
+      x-download-options: [noopen]
+      x-frame-options: [sameorigin]
+      x-permitted-cross-domain-policies: [none]
+      x-request-id: [b9a180a0-ae2a-49e6-979d-436274a4abd7]
+      x-runtime: ['0.066152']
+      x-xss-protection: [1; mode=block]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['0']
+      User-Agent: [python-requests/2.18.4]
+      content-type: [application/json]
+    method: DELETE
+    uri: https://centos7-devel/api/v2/locations/91
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42PwQrCMAyGX0Vy7mTdwLk+gQcPHnZSZNQ2zkDXlrYThvjuVnE3Dx7/5Evy5QGk
+        QbScgZUjgoAOY1rtnZKJnAUGKqBMqHuZcrMq+bYo66LiHd+IuhFls245P2Zu8vovjgbrAvZp9hhB
+        nOAQ3J1ivkV26HD0Jm/J2M7FNAQ3eTgz0BhVIP8xEnYyhoGRFzRLkFZl6zAvOVEyv34ZpaVrrvUB
+        rwHj7av7Hnq+AI3SqqoJAQAA
+    headers:
+      apipie-checksum: [50f118e03d02e87d1e679bc02ac0bde0]
+      cache-control: ['max-age=0, private, must-revalidate']
+      connection: [Keep-Alive]
+      content-encoding: [gzip]
+      content-length: ['189']
+      content-security-policy: ['default-src ''self''; child-src ''self''; connect-src
+          ''self'' ws: wss:; img-src ''self'' data: *.gravatar.com; script-src ''unsafe-eval''
+          ''unsafe-inline'' ''self''; style-src ''unsafe-inline'' ''self''']
+      content-type: [application/json; charset=utf-8]
+      date: ['Wed, 21 Mar 2018 16:37:21 GMT']
+      etag: [W/"6bf602a34fe7aedfe9f75ef0b3b4a8ec-gzip"]
+      foreman_api_version: ['2']
+      foreman_version: [1.16.0]
+      keep-alive: ['timeout=15, max=100']
+      server: [WEBrick/1.3.1 (Ruby/2.2.4/2015-12-16)]
+      set-cookie: [request_method=DELETE; path=/, _session_id=b99acaa80074ec6aea44aa97c7fd4447;
+          path=/; HttpOnly]
+      strict-transport-security: [max-age=631152000; includeSubdomains]
+      vary: [Accept-Encoding]
+      via: [1.1 centos7-devel.anubis.example.com]
+      x-content-type-options: [nosniff]
+      x-download-options: [noopen]
+      x-frame-options: [sameorigin]
+      x-permitted-cross-domain-policies: [none]
+      x-request-id: [e0d018a0-6a98-4f05-a25b-fd913f5c6335]
+      x-runtime: ['0.118249']
+      x-xss-protection: [1; mode=block]
+    status: {code: 200, message: OK}
+version: 1

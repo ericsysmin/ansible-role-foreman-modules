@@ -1,0 +1,55 @@
+---
+- hosts: fixtures
+  gather_facts: false
+  tasks:
+  - name: Load server config
+    include_vars:
+      file: server_vars.yml
+  - include: tasks/organization.yml
+    vars:
+      organization_state: present
+  - include: tasks/product.yml
+    vars:
+      product_state: present
+  - include: tasks/repository.yml
+    vars:
+      repository_state: present
+
+- hosts: tests
+  gather_facts: false
+  tasks:
+  - name: 'Load server config'
+    include_vars:
+      file: server_vars.yml
+  - include: tasks/content_view.yml
+    vars:
+      content_view_state: present
+      expected_change: true
+  - include: tasks/content_view.yml
+    vars:
+      content_view_state: present
+      expected_change: false
+  - include: tasks/content_view.yml
+    vars:
+      content_view_state: absent
+      expected_change: true
+  - include: tasks/content_view.yml
+    vars:
+      content_view_state: absent
+      expected_change: false
+
+- hosts: fixtures
+  gather_facts: false
+  tasks:
+  - name: 'Load server config'
+    include_vars:
+      file: server_vars.yml
+  - include: tasks/repository.yml
+    vars:
+      repository_state: absent
+  - include: tasks/product.yml
+    vars:
+      product_state: absent
+  - include: tasks/organization.yml
+    vars:
+      organization_state: absent
