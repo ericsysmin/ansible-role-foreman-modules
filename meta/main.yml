@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: foreman-modules
   author: Eric Anderson
   description: Deploy Foreman Ansible Modules as a Role
   issue_tracker_url: https://github.com/ericsysmin/ansible-role-foreman-modules/issues
